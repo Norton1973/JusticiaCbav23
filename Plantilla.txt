@@ -1,0 +1,20 @@
+CUMPLIMENTA. ACOMPAÑA. ACLARA. DENUNCIA. PROVEA DEMANDA.-
+Sr. Juez:
+{{procurador}} apoderado de la actora, en estos autos caratulados, ante V.S. respetuosamente comparezco y expongo:
+
+I.- En cumplimiento del decreto que antecede, vengo a acompañar Certificación de Deuda Digitalizado en forma, juro que es copia fiel de su original que obra en mi poder, Poder/Designación, juro que el mismo es copia fiel de su original y subsiste al día de la fecha (el mismo está incorporado al SAC por Legal y Técnica) y Planilla de Aportes.
+
+II.- Aclaro que el monto demandado es el indicado en el certificado de deuda, acompañado en este acto, y es por la suma de pesos {{MONTOTXT}} (${{MONTONRO}}).
+
+                       III.- Asimismo, aclaro que el N° de liquidación de deuda es el {{NROLIQU}} (Orden) y el N° de identificación tributaria es el {{REFERENCIA}}. 
+IV.- A los fines de cumplimentar con el art. 17 del Reglamento General del Expediente Judicial electrónico correspondiente al A.R 1582  serie A del 21/08/2019 el CUIT del demandado es el N° {{CUIT}}.
+     
+V.- Denuncio que el domicilio tributario es {{DOMICILIO}}, que figura en el Certificado de Deuda Digitalizado    
+
+VI.- En consecuencia, provea lo solicitado en la demanda, la que será notificada con el presente escrito. 
+ 
+VII.- PETITUM: Por todo lo antes expuesto, a V.S. SOLICITO:
+1)	Téngase por cumplimentado lo requerido por el Tribunal.-  
+2)  Provea la demanda como se solicita.- 
+
+         SERÁ JUSTICIA.-

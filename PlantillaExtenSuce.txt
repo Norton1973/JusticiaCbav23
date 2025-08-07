@@ -1,0 +1,13 @@
+Señor/a Juez:
+[Quien_Suscribe], en estos autos caratulados “[CARATULA]”, comparezco y DIGO:
+
+Que vengo por el presente a acompañar extensión del título de deuda y a aclarar los términos del escrito de demanda en lo que respecta a la legitimación pasiva:
+
+{{apeynom}}
+DOMICILIO: {{domicilio}}
+
+No se desiste, atento que la sucesión es la continuadora legal de la persona del demandado, siendo la misma. 
+Recaratúlense las actuaciones. 
+Por lo expuesto solicito:
+Tenga por acompañada extensión del título de deuda y por aclarados los términos del escrito de demanda.
+Provea de conformidad que, es ley.

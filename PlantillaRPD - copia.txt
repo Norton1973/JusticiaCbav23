@@ -1,0 +1,14 @@
+Señor/a Juez:
+
+[Quien_Suscribe], en estos autos caratulados “[CARATULA]”, comparezco y DIGO:
+
+Por la presente reitero solicitud de provea a la demanda oportunamente interpuesta.
+
+A tales fines denuncio que el nombre del demandado es {{demandado}} CUIT {{cuit}}. Asimismo. denuncio como domicilio fiscal del accionado el de calle {{domicilio}}. Todo como surge de las constancias del título base de la acción agregado a autos. 
+Reitero que el poder, la planilla de aportes y certificado de deuda se encuentran agregados en el/los escrito/s de provea demanda presentado/s con anterioridad. 
+Por lo expresado solicita:
+
+Se provea a la demanda incoada. 
+
+Provea de conformidad que, es ley.
+

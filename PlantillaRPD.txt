@@ -1,0 +1,26 @@
+Señor/a Juez:
+
+[Quien Suscribe], en estos autos caratulados “[CARATULA]”, comparezco y DIGO:
+
+Por la presente reitero solicitud de provea a la demanda oportunamente interpuesta.
+A tales fines vengo a aclarar que:
+
+El número de identificador es {{referencia}}
+
+El número de liquidación es {{nroliqu}}
+
+El concepto de la deuda es por {{concepto}}
+
+El nombre de la legitimación pasiva es {{demandado}} 
+
+El número de CUIT es {{cuit}}
+
+El domicilio fiscal es {{domicilio}}
+
+Todo como lo informa el título base de la acción que se adjunta nuevamente. 
+Asimismo, aclaro que la demanda se ingresó por DACIA, no siendo esta instancia requisito la planilla de aportes de la CAJA DE ABOGADOS. 
+Por lo expresado solicita:
+
+Se provea a la demanda incoada. 
+
+Provea de conformidad que, es ley.
