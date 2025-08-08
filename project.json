@@ -2,7 +2,7 @@
   "name": "JusticiaCbav23",
   "projectId": "1d1867a4-a021-42f3-a354-67ee2b6ba229",
   "description": "Proceso en blanco",
-  "main": "ExtensionesCarga\\NuevoEscritoCargaExtensiones.xaml",
+  "main": "ExtensionesCarga\\MainCargaExtensiones.xaml",
   "dependencies": {
     "UiPath.Database.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.12.3]",
@@ -55,6 +55,12 @@
     {
       "filePath": "ExtensionesCarga\\NuevoEscritoCargaExtensiones.xaml",
       "uniqueId": "bbf2742b-8f1a-4143-8f1c-b4787d0ea125",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "ExtensionesCarga\\MainCargaExtensiones.xaml",
+      "uniqueId": "177497ae-caa4-4508-bac2-aa2a3b1adf99",
       "input": [],
       "output": []
     }
