@@ -1,0 +1,422 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="RevisaDomicilio" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="pSalida" Type="OutArgument(x:String)" />
+    <x:Property Name="pFechaInicio" Type="OutArgument(x:String)" />
+    <x:Property Name="vInnerText" Type="InArgument(x:String)" />
+    <x:Property Name="vRow" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:RevisaDomicilio.vRow>
+    <InArgument x:TypeArguments="x:String" />
+  </this:RevisaDomicilio.vRow>
+  <sap:VirtualizedContainerService.HintSize>1031,2270</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="58">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="62">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="obtieneInfo de Radiografia Expe" sap:VirtualizedContainerService.HintSize="1166,2183" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'GESTIONDI Page'" sap:VirtualizedContainerService.HintSize="622,2160" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d3f58555551c4f4f0207e2960bc11c4d" Selector="&lt;html app='chrome.exe' htmlwindowname='PrivatePostWindow*' title=':: G E S T I O N     D I G I T A L     P A R A     A B O G A D O S ::' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="588,1990" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="vTexto" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="554,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="376,490" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'IMG  grdExpedientes_Row...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition OffsetX="17" OffsetY="13" Position="TopLeft" />
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3330108b-fc9e-486e-b4ac-91654858f4e0" InformativeScreenshot="c0f4ad17aee894607312f3b4ff4e10e5" Selector="&lt;webctrl id='grdExpedientes_Row_0_column7_control_1' tag='IMG' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Obtener texto 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7024f2b6-f7a4-450d-bd29-d186c9b33e49" InformativeScreenshot="b80bb38aca787e4661b6213a7423c54c" Selector="&lt;webctrl src='../_Expedientes/Radiografia.aspx?idExpediente=*' tag='IFRAME' /&gt;&lt;webctrl id='lblFechaInicio' tag='SPAN' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[pFechaInicio]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition OffsetX="57" OffsetY="13" Position="TopLeft" />
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="78eb9421-aba6-47c1-960a-e7267b9a5311" InformativeScreenshot="35f59ac2421362d7dd50037d8d89f444" Selector="&lt;webctrl src='../_Expedientes/Radiografia.aspx?idExpediente=*' tag='IFRAME' /&gt;&lt;webctrl id='tabOperacionesButtonLabel' tag='SPAN' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <Sequence sap2010:Annotation.AnnotationText="Este lo uso para descargar cualquier documento de la grilla, llamandolo desde el wf anterior. envio la fila a clicquear como parametro" DisplayName="DescargaPDFExpediente" sap:VirtualizedContainerService.HintSize="554,1873" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="vCoincidencia" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'GESTIONDI Page'" sap:VirtualizedContainerService.HintSize="520,1745" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="0f50fa486835616690a6dcec24896bd5" Selector="&lt;html app='chrome.exe' htmlwindowname='PrivatePostWindow*' title=':: G E S T I O N     D I G I T A L     P A R A     A B O G A D O S ::' /&gt;">
+                <ui:BrowserScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1575" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="sd:DataTable" Name="vTabla" />
+                        <Variable x:TypeArguments="x:String" Name="vOpciones" />
+                        <Variable x:TypeArguments="x:String" Name="vSelector" />
+                        <Variable x:TypeArguments="ui:UiElement" Name="vUi" />
+                        <Variable x:TypeArguments="x:String" Name="vAtributo" />
+                        <Variable x:TypeArguments="x:String" Name="vAtributoImg" />
+                        <Variable x:TypeArguments="x:String" Name="vVerMas" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[vTexto]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">*Admisión*</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign DisplayName="selector certificado" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[vSelector]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">["&lt;webctrl src='../_Expedientes/Radiografia.aspx?idExpediente=*' tag='IFRAME' /&gt;&lt;webctrl parentid='grdOperaciones_Row_*_column4' tag='DIV' innertext='Admisión*' /&gt;"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Obtener texto 'A  lnkOperacionesVerMas'" sap:VirtualizedContainerService.HintSize="452,139" sap2010:WorkflowViewState.IdRef="GetValue_3">
+                        <ui:GetValue.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ca63f0c4-1bd3-4233-9807-d39076943593" InformativeScreenshot="5ca73e0003a4d3430e48cba44ce8ac78" Selector="&lt;webctrl src='../_Expedientes/Radiografia.aspx?idExpediente=*' tag='IFRAME' /&gt;&lt;webctrl tag='A' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:GetValue.Target>
+                        <ui:GetValue.Value>
+                          <OutArgument x:TypeArguments="x:String">[vVerMas]</OutArgument>
+                        </ui:GetValue.Value>
+                      </ui:GetValue>
+                      <If Condition="[NOT vVerMas.Contains(&quot;MENOS&quot;)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="452,419" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="450,190" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Clic 'A  lnkOperacionesVerMas'" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="53325dc8-db21-4916-a560-307e65dda90a" InformativeScreenshot="fc722f39e0f22fadb47f1d35ed2a38bc" Selector="&lt;webctrl src='../_Expedientes/Radiografia.aspx?idExpediente=*' tag='IFRAME' /&gt;&lt;webctrl tag='A' /&gt;" TimeoutMS="2000">
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[vSelector]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;webctrl src='../_Expedientes/Radiografia.aspx?idExpediente=*' tag='IFRAME' /&gt;&lt;webctrl parentid='grdOperaciones_Row_*_column4' tag='DIV'  innertext='{{vInnerText}}*' /&gt;"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[vSelector]" />
+                      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="452,115" sap2010:WorkflowViewState.IdRef="Assign_8">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[vAtributoImg]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["&lt;webctrl src='../_Expedientes/Radiografia.aspx?idExpediente=*' tag='IFRAME' /&gt;&lt;webctrl id='grdOperaciones_Row_{{vRow}}_column12_control_0' tag='IMG' /&gt;"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Replace BuilderPattern="column(\d+)" DisplayName="Reemplazar" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Replace_1" Input="[vAtributoImg]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Avanzado&quot;,&quot;OperationValue&quot;:&quot;column(\\d+)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="{}{{vCol}}" RegexOption="IgnoreCase, Compiled" Replacement="[vCoincidencia(0)tostring]" Result="[vSelector]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Replace>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="452,115" sap2010:WorkflowViewState.IdRef="Assign_9">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[vSelector]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[vAtributoImg]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[vSelector+ vRow]" />
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'IMG  grdOperaciones_Row...'" sap:VirtualizedContainerService.HintSize="452,139" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="7" OffsetY="9" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9d74dfd7-4320-48ab-b357-f681f0102ef7" InformativeScreenshot="efbc6174c426f30091b579e3040157f7" Selector="[vSelector]" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <Delay VisualBasic.Settings="{x:Null}" DisplayName="Delay 3 second" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Delay_2">
+                        <TextExpression.Namespaces>
+                          <sco:Collection x:TypeArguments="x:String">
+                            <x:String>System.Activities</x:String>
+                            <x:String>System.Activities.Statements</x:String>
+                            <x:String>System.Activities.Expressions</x:String>
+                            <x:String>System.Activities.Validation</x:String>
+                            <x:String>System.Activities.XamlIntegration</x:String>
+                            <x:String>Microsoft.VisualBasic.Activities</x:String>
+                            <x:String>System</x:String>
+                            <x:String>System.Collections.Generic</x:String>
+                            <x:String>System.Data</x:String>
+                            <x:String>System.Diagnostics</x:String>
+                            <x:String>System.IO</x:String>
+                            <x:String>System.Linq</x:String>
+                            <x:String>System.Management.Automation</x:String>
+                            <x:String>System.Net.Mail</x:String>
+                            <x:String>System.Xml</x:String>
+                            <x:String>System.Xml.Linq</x:String>
+                            <x:String>UiPath.Library</x:String>
+                            <x:String>System.Windows.Markup</x:String>
+                          </sco:Collection>
+                        </TextExpression.Namespaces>
+                        <TextExpression.References>
+                          <sco:Collection x:TypeArguments="AssemblyReference">
+                            <AssemblyReference>System.Activities</AssemblyReference>
+                            <AssemblyReference>mscorlib</AssemblyReference>
+                            <AssemblyReference>System.Data</AssemblyReference>
+                            <AssemblyReference>System</AssemblyReference>
+                            <AssemblyReference>System.Core</AssemblyReference>
+                            <AssemblyReference>System.Management.Automation</AssemblyReference>
+                            <AssemblyReference>System.Xml</AssemblyReference>
+                            <AssemblyReference>System.Xml.Linq</AssemblyReference>
+                            <AssemblyReference>UiPath.Library</AssemblyReference>
+                            <AssemblyReference>PresentationFramework</AssemblyReference>
+                            <AssemblyReference>WindowsBase</AssemblyReference>
+                            <AssemblyReference>PresentationCore</AssemblyReference>
+                            <AssemblyReference>System.Xaml</AssemblyReference>
+                          </sco:Collection>
+                        </TextExpression.References>
+                        <sap2010:WorkflowViewState.ViewStateManager>
+                          <sap2010:ViewStateManager>
+                            <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="200,22" Id="Delay_1" />
+                          </sap2010:ViewStateManager>
+                        </sap2010:WorkflowViewState.ViewStateManager>
+                      </Delay>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:BrowserScope.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:BrowserScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

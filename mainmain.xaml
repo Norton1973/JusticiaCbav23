@@ -69,12 +69,17 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="mainmain" sap:VirtualizedContainerService.HintSize="1275,502.65666666666664" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="mainmain" sap:VirtualizedContainerService.HintSize="1265,823.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NuevoEscritoNoOpo - Invocar archivo de flujo de trabajo (NuevoEscritoNoOpo.xaml)" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="NuevoEscritoNoOpo.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="450,109" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;como llegamos aca?&quot;]" />
   </Sequence>
 </Activity>

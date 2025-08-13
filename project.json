@@ -2,7 +2,7 @@
   "name": "JusticiaCbav23",
   "projectId": "1d1867a4-a021-42f3-a354-67ee2b6ba229",
   "description": "Proceso en blanco",
-  "main": "NuevoEscritoNoOpo.xaml",
+  "main": "Cedulas.xaml",
   "dependencies": {
     "UiPath.Database.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.12.3]",
@@ -79,6 +79,18 @@
     {
       "filePath": "NuevoEscritoNoOpo.xaml",
       "uniqueId": "887d4a90-e1af-42eb-88ae-a496b9f34714",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "PresentaEscritosNoopo.xaml",
+      "uniqueId": "2746ecf0-4ca4-48fe-b750-e69a6cb654c6",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Cedulas.xaml",
+      "uniqueId": "1d7459c3-269e-480b-aea5-f9a48778bcaf",
       "input": [],
       "output": []
     }
