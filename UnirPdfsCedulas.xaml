@@ -88,7 +88,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UnirPdfsCedular" sap:VirtualizedContainerService.HintSize="1353,3904" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence DisplayName="UnirPdfsCedular" sap:VirtualizedContainerService.HintSize="1316,3982" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="vExiste" />
       <Variable x:TypeArguments="x:String" Name="vArchivo" />
@@ -193,13 +193,13 @@
         <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(vCarpeta, "*.pdf")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada item" sap:VirtualizedContainerService.HintSize="488,404" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[vPDFs]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada item" sap:VirtualizedContainerService.HintSize="488,514" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[vPDFs]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="450,273" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="468,383" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="vCadena" />
             </Sequence.Variables>
@@ -208,7 +208,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_24">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[vCadena]</OutArgument>
               </Assign.To>
@@ -216,7 +216,7 @@
                 <InArgument x:TypeArguments="x:String">[Path.GetFileName(item.ToString).Replace(videntif,"")]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="notif" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign DisplayName="notif" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[vArchivo]</OutArgument>
               </Assign.To>
@@ -402,22 +402,22 @@
       </Assign.Value>
     </Assign>
     <ui:CreateList x:TypeArguments="x:String" DisplayName="Crear lista" sap:VirtualizedContainerService.HintSize="488,167" sap2010:WorkflowViewState.IdRef="CreateList`1_1" NewList="[vPDFSunir]" />
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada item" sap:VirtualizedContainerService.HintSize="488,688" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[vListaPDFs]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada item" sap:VirtualizedContainerService.HintSize="488,656" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[vListaPDFs]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="462,557" sap2010:WorkflowViewState.IdRef="Sequence_23">
+          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="486,525" sap2010:WorkflowViewState.IdRef="Sequence_23">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="428,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item.ToString]" />
-            <If Condition="[item.ToString&lt;&gt;&quot;&quot;]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="428,374" sap2010:WorkflowViewState.IdRef="If_1">
+            <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item.ToString]" />
+            <If Condition="[item.ToString&lt;&gt;&quot;&quot;]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="452,342" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="426,224" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,192" sap2010:WorkflowViewState.IdRef="Sequence_24">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
