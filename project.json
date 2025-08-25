@@ -2,7 +2,7 @@
   "name": "JusticiaCbav23",
   "projectId": "1d1867a4-a021-42f3-a354-67ee2b6ba229",
   "description": "Proceso en blanco",
-  "main": "Cedulas.xaml",
+  "main": "NuevoEscritoDesiste.xaml",
   "dependencies": {
     "UiPath.Database.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.12.3]",
@@ -11,8 +11,7 @@
     "UiPath.Python.Activities": "[1.8.0]",
     "UiPath.System.Activities": "[24.10.7]",
     "UiPath.UIAutomation.Activities": "[21.10.10]",
-    "UiPath.Word.Activities": "[1.16.1]",
-    "UiPathTeam.Subtitle.Activities": "[1.2.1]"
+    "UiPath.Word.Activities": "[1.16.1]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -89,8 +88,14 @@
       "output": []
     },
     {
+      "filePath": "NuevoEscritoDesiste.xaml",
+      "uniqueId": "45b9949c-350a-4c4c-a4c5-b03fd7dcdf1e",
+      "input": [],
+      "output": []
+    },
+    {
       "filePath": "Cedulas.xaml",
-      "uniqueId": "1d7459c3-269e-480b-aea5-f9a48778bcaf",
+      "uniqueId": "9beaafe8-06b0-4c54-a46c-9229b9572b9e",
       "input": [],
       "output": []
     }
