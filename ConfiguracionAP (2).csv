@@ -1,0 +1,24 @@
+Dato,Valor
+idProcu,"378"
+nombreProc,"PARDINI, ANIBAL ALEJANDRO"
+usuario,"1-29850"
+pass,"Pablo2024"
+vista,"paracargajuicios_CertJud"
+vistaRevisa,"pararRevisarCarga_CertJud"
+vistaEscritos,"pararCargaEscritos"
+vistaEscritosNoOpo,"pararCargaNoOpo"
+vistaEscritosExten,"pararCargaExten"
+vistaReitera,"paraCargaRPD"
+vistaAgrega,"paraCargaEscritosAgrega"
+patrocinado,"MUNICIPALIDAD DE CÓRDOBA"
+archPoder,"Poder Pardini.pdf"
+where,""
+limitePres,641075
+limiteExpe,10600000
+limiteFecha,"21/12/2022"
+origenDatos,"DemandasAP042025"
+origenDatosExten="AP032025"
+vistaLeerCert,"paraLeerCertificados"
+rutaCertJuicio,"C:\Procurar.Juicios\AP\Certificados"
+vistaNoOpo,"pararCargaNoOpo"
+fechaAct,"22.05.2025
