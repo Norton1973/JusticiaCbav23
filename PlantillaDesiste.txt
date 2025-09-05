@@ -1,8 +1,8 @@
-Señor/a Juez:
+﻿Señor/a Juez:
 
 [Quien_Suscribe], en estos autos caratulados “[CARATULA]”, EXPEDIENTE N° {{expediente}} comparezco y DIGO:
 
-Que vengo por el presente a desistir de la acción incoada en autos conforme lo prevé el art. 349 del CPCC, por cambio de titularidad del inmueble. 
+Que vengo por el presente a desistir de la acción iniciada en autos conforme lo prevé el art. 349 del CPCC, por cambio de titularidad del inmueble. 
 
 Hago presente que la tasa de justicia no se encuentra abonada porque la deuda no fue cancelada (pagada) por el contribuyente. 
 

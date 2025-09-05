@@ -82,7 +82,7 @@
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PresentaProveaDemanda" sap:VirtualizedContainerService.HintSize="1547,6937" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PresentaProveaDemanda" sap:VirtualizedContainerService.HintSize="1441,6937" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -108,7 +108,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Este tambien sirve para cargar de archivos de desiste firmados &#xA;tengo que actualizar en la tabla el nombre del archivo e indicarle la plantilla que usa" DisplayName="NuevoEscrito" sap:VirtualizedContainerService.HintSize="1269,8971" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Este tambien sirve para cargar de archivos de desiste firmados &#xA;tengo que actualizar en la tabla el nombre del archivo e indicarle la plantilla que usa" DisplayName="NuevoEscrito" sap:VirtualizedContainerService.HintSize="1095,9037" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="vCumplimenta" />
       <Variable x:TypeArguments="x:String" Name="vServer" />
@@ -122,7 +122,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Captura error proceso..." sap:VirtualizedContainerService.HintSize="736,8903" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Captura error proceso..." sap:VirtualizedContainerService.HintSize="736,8969" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -130,7 +130,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="734,8544" sap2010:WorkflowViewState.IdRef="Sequence_45">
+        <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="734,8610" sap2010:WorkflowViewState.IdRef="Sequence_45">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -282,13 +282,13 @@
             </sap:WorkflowViewStateService.ViewState>
           </ui:BrowserScope>
           <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="700,57" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[tabla.RowCount.ToString]" />
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabla]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="700,6742" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabla]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="700,6808" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="698,6569" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="698,6635" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="vIdentif" />
                     <Variable x:TypeArguments="x:String" Name="vLetras" />
@@ -354,7 +354,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:FileExistsX>
-                  <If Condition="[vHayTitulo]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="664,5806" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[vHayTitulo]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="664,5872" sap2010:WorkflowViewState.IdRef="If_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1353,7 +1353,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence sap2010:Annotation.AnnotationText="Falta Adjunto va -2" DisplayName="Else" sap:VirtualizedContainerService.HintSize="662,196" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                      <Sequence sap2010:Annotation.AnnotationText="Falta Adjunto va -2" DisplayName="Else" sap:VirtualizedContainerService.HintSize="662,262" sap2010:WorkflowViewState.IdRef="Sequence_52">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1361,7 +1361,13 @@
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="628,57" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Falta Archivo &quot;+vAporteArch]" />
+                        <WriteLine DisplayName="Escribir línea" sap:VirtualizedContainerService.HintSize="628,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Falta Archivo &quot;+vAporteArch]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </WriteLine>
                         <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="628,48" sap2010:WorkflowViewState.IdRef="Assign_31">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[vIdEscrito]</OutArgument>

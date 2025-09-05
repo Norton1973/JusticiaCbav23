@@ -1,12 +1,16 @@
 Señor/a Juez:
 
-[Quien_Suscribe], en estos autos caratulados “[CARATULA]”, comparezco y DIGO:
+[Quien_Suscribe], en estos autos caratulados “[CARATULA]” EXPEDIENTE N° {{expediente}} , comparezco y DIGO:
 
-Que acompaña a estos obrados escrito rubricado por la autoridad competente, en consecuencia, proceda al archivo de las actuaciones como se solicitó. 
-Asimismo, reitero que la deuda no fue cancelada por el contribuyente, por ello no se abonó la tasa de justicia. 
+Que vengo por el presente a desistir de la acción iniciada en autos conforme lo prevé el art. 
+349 del CPCC por BAJA DE LA OPERACIÓN, no existiendo otro motivo. 
 
+Hace presente que no se efectuó el pago de la tasa de justicia atento que la deuda no ha sido 
+cancelada por el contribuyente. 
 Por lo expuesto solicito:
 
- Agréguese lo acompañado. 
+Tenga por desistida la acción.
+
+Ordene el archivo de las actuaciones.
 
 Es justicia.
