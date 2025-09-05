@@ -88,7 +88,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UnirPdfsCedular" sap:VirtualizedContainerService.HintSize="1457,3908" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence DisplayName="UnirPdfsCedular" sap:VirtualizedContainerService.HintSize="1353,3904" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="vExiste" />
       <Variable x:TypeArguments="x:String" Name="vArchivo" />
@@ -147,7 +147,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,115" sap2010:WorkflowViewState.IdRef="Assign_19">
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,114" sap2010:WorkflowViewState.IdRef="Assign_19">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[vCertificadoRuta]</OutArgument>
       </Assign.To>
@@ -155,7 +155,7 @@
         <InArgument x:TypeArguments="x:String">["C:\NuevosEscritosDocs\ProveaDemanda\"+vCertificado]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,115" sap2010:WorkflowViewState.IdRef="Assign_12">
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,114" sap2010:WorkflowViewState.IdRef="Assign_12">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[vCarpeta]</OutArgument>
       </Assign.To>
@@ -163,7 +163,7 @@
         <InArgument x:TypeArguments="x:String">["C:\NuevosEscritosDocs\cedulas\"+vidproc.Trim+"\"+vIdentif.ToString.Trim]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,115" sap2010:WorkflowViewState.IdRef="Assign_18">
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,114" sap2010:WorkflowViewState.IdRef="Assign_18">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[vCarpetaProc]</OutArgument>
       </Assign.To>
@@ -177,7 +177,7 @@
         <OutArgument x:TypeArguments="x:String" x:Key="valor">[vArchPoder]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,115" sap2010:WorkflowViewState.IdRef="Assign_15">
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="488,114" sap2010:WorkflowViewState.IdRef="Assign_15">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[vPoder]</OutArgument>
       </Assign.To>
@@ -193,7 +193,7 @@
         <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(vCarpeta, "*.pdf")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada" sap:VirtualizedContainerService.HintSize="488,404" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[vPDFs]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Para cada item" sap:VirtualizedContainerService.HintSize="488,404" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[vPDFs]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
