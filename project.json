@@ -2,7 +2,7 @@
   "name": "JusticiaCbav23",
   "projectId": "1d1867a4-a021-42f3-a354-67ee2b6ba229",
   "description": "Proceso en blanco",
-  "main": "PresentaEscritosAgrega.xaml",
+  "main": "Cedulas\\CedulasCertifica.xaml",
   "dependencies": {
     "UiPath.Database.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.12.3]",
@@ -103,6 +103,12 @@
     {
       "filePath": "PresentaEscritosDesiste.xaml",
       "uniqueId": "e51574dd-e89a-4315-80fd-b022238fcbb5",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Cedulas\\CedulasCertifica.xaml",
+      "uniqueId": "77af2477-4c38-435f-8efa-903b12b385b5",
       "input": [],
       "output": []
     }
